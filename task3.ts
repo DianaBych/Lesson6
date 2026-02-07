@@ -16,15 +16,15 @@ const userAnalyzer = {
       activeUsers: 0,
     };
 
-      for (const user of this.users) {
-        result.total++;
-        if (user.age >= 18) {
-          result.adults++;
-        }
-        if (user.isActive) {
-          result.activeUsers++;
-        }
+    for (const user of this.users) {
+      result.total++;
+      if (user.age >= 18) {
+        result.adults++;
       }
+      if (user.isActive) {
+        result.activeUsers++;
+      }
+    }
     return result;
   },
 };
